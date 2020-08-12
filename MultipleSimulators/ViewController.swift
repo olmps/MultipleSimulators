@@ -21,5 +21,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func clickMe(_ sender: Any) {
+        let alert = UIAlertController(title: "Click me", message: "Hey, I am clicked", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
